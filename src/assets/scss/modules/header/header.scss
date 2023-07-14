@@ -1,0 +1,142 @@
+.header {
+	position: relative;
+
+	&__title {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		max-width: 46.7rem;
+
+		color: rgba($color-003, $alpha: .06);
+	}
+
+	&__aside {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	&__slider-item {
+		position: relative;
+
+		min-height: 100vh;
+
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		&::after {
+			content: '';
+
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+
+			background: radial-gradient(62.09% 62.09% at 42.87% 49.23%, rgba(34, 34, 34, 0.43) 0%, #0F0F0F 100%);
+		}
+	}
+
+	&__slider-item-container {
+		position: relative;
+		z-index: 1;
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	&__slider-img {
+		margin-bottom: 11.5rem;
+	}
+
+	&__slider-titles {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+
+		margin-right: 8rem;
+	}
+
+	&__slider-suptitle {
+		margin-bottom: .5rem;
+		@extend %suptitle-property;
+	}
+
+	&__slider-title {
+		margin-bottom: 5rem;
+	}
+
+	&__slider-subtitle {
+		margin-bottom: 2rem;
+	}
+	
+	&__arrow-link {
+		position: absolute;
+		bottom: 4rem;
+		left: 20.9rem;
+	}
+	
+	&__slider-dots {
+		position: absolute;
+		right: 8rem;
+		bottom: 3rem;
+
+		width: 92rem;
+		
+		.slick-slide {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.slick-track {
+			display: flex;
+
+			transform: none !important;
+		}
+	}
+
+	&__slider-dot {
+		flex-grow: 1;
+		padding-top: .6rem;
+		border-top: .4rem solid $color-003;
+		
+		&:not(:last-child) {
+			margin-right: 40px;
+		}
+
+		&.slick-current {
+			border-color: $color-001;
+		}
+
+	}
+
+	&__slider-number {
+		@extend %font-800;
+		font-size: 2.4rem;
+		line-height: 3.4rem;
+		text-transform: uppercase;
+	}
+
+	&__slider-dot-name {
+		@extend %font-300;
+		font-size: 1.6rem;
+		line-height: 1.9rem;
+		text-transform: capitalize;
+	}
+
+	&__map-path {
+		stroke-dashoffset: 600;
+    	stroke-dasharray: 600;
+		animation: animdash 3s 6s;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes animdash {
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+}

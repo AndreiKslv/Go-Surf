@@ -1,0 +1,63 @@
+%font-100 {
+	font-family: 'FiraSans-Thin';
+	font-weight: 100;
+}
+
+%font-300 {
+	font-family: 'FiraSans-Light';
+	font-weight: 300;
+}
+
+%font-400 {
+	font-family: 'FiraSans-Regular';
+	font-weight: 400;
+}
+
+%font-500 {
+	font-family: 'FiraSans-Medium';
+	font-weight: 500;
+}
+
+%font-800 {
+	font-family: 'FiraSans-ExtraBold';
+	font-weight: 800;
+}
+
+%title-md {
+	font-size: 8rem;
+	line-height: 8.6rem;
+}
+
+%title-sm {
+	font-size: 4rem;
+	line-height: 4.3rem;
+}
+
+%title-reflection {
+	font-size: 20rem;
+	line-height: 15.6rem;
+	color: rgba($color-003, $alpha: .02);
+}
+
+%suptitle-property {
+	position: relative;
+
+	color: rgba($color-003, $alpha: .5);
+	font-family: 'FiraSans-Regular';
+	font-weight: 400;
+	font-size: 2.2rem;
+	line-height: 3.2rem;
+	letter-spacing: .7333rem;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+
+		width: 8rem;
+		height: .1rem;
+
+		background: rgba($color-003, $alpha: .5)
+	}
+}
+

@@ -1,0 +1,140 @@
+.section {
+	position: relative;
+
+	padding-bottom: 31rem;
+	
+    &__title {
+		margin-left: 24rem;
+		margin-bottom: 9rem;
+	}
+
+    &__slider {}
+
+    &__slider-item {
+		position: relative;
+	}
+
+    &__img {
+		margin-bottom: 10rem;
+	}
+
+    &__img-part {
+		position: absolute;
+		top: 50rem;
+    	right: 0;
+	}
+    &__text-block {}
+
+	&__text-block--right {
+		position: absolute;
+		top: 9rem;
+		right: 7.7rem;
+	}
+
+	&__text-block--left {
+		position: absolute;
+		top: 67rem;
+		left: 13.5rem;
+	}
+	
+    &__list {
+		display: flex;
+		justify-content: center;
+		gap: 5rem;
+
+		margin-bottom: 6.5rem;
+	}
+
+    &__list-item {
+		display: flex;
+		min-width: 26rem;
+	}
+
+    &__list-item-property {
+		@extend %font-400;
+		
+		margin-right: 1.8rem;
+
+		text-align: right;
+		color: rgba($color-003, $alpha: .5);
+		font-size: 1.8rem;
+		line-height: 2.2rem;
+		letter-spacing: .8rem;
+
+		transform: rotate(-180deg);
+    	writing-mode: vertical-rl;
+	}
+
+	&__list-item-valuecount {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__list-item-count {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		gap: .6rem;
+
+		margin-top: .7rem;
+	}
+
+	&__list-item-minus {
+		padding: 1rem .5rem;
+	}
+
+	&__list-item-plus {
+		padding: .5rem;
+	}
+
+	&__list-item-value-word {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+    &__list-item-value {
+		@extend %font-800;
+
+		max-width: 24.4rem;
+
+		font-size: 4rem;
+		line-height: 3.6rem;
+	}
+
+    &__list-item-word {
+		@extend %font-400;
+
+		color: rgba($color-003, $alpha: .7);
+		font-size: 1.4rem;
+		line-height: 3.6rem;
+		letter-spacing: .525rem;
+	}
+
+    &__img-right {
+		position: absolute;
+		right: 0;
+	}
+
+	&__img-right--travel {
+		top: 108.5rem;
+	}
+
+	&__img-right--flower {
+		top: 116rem;
+	}
+
+	&__img-right--small-flower {
+		top: 65.5rem;
+	}
+
+    &__button {
+		justify-content: center;
+	}
+
+	& .slick-prev,
+	& .slick-next {
+		top: 21rem;
+	}
+}
+

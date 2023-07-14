@@ -1,0 +1,21 @@
+.footer {
+	padding: 5rem 0 3.5rem;
+
+    &__button {
+		display: flex;
+		justify-content: center;
+		
+		margin-bottom: 3rem;
+	}
+
+    &__rights {
+		@extend %font-300;
+
+		color: rgba($color: $color-003, $alpha: .5);
+		text-align: center;	
+		font-size: 1.2rem;
+		line-height: 1.4rem; /* 116.667% */
+		letter-spacing: .105rem;
+	}
+}
+

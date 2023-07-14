@@ -1,0 +1,24 @@
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 4rem;
+  right: 12.4rem;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 8rem;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+.surf .slick-slide {
+  height: unset;
+}
+.surf .slick-track {
+  height: 90rem;
+}/*# sourceMappingURL=myslick.css.map */

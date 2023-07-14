@@ -1,0 +1,30 @@
+.double-title {
+	position: relative;
+
+	display: inline-block;
+
+    &__title {
+		position: relative;
+
+		&::after {
+			content: '';
+
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			width: 8rem;
+			height: .1rem;
+
+			background-color: $color-001;
+		}
+	}
+
+    &__subtitle {
+		position: absolute;
+		top: 3.5rem;
+   		left: -29.5rem;
+	}
+}
+
+

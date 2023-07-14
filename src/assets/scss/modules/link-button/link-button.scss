@@ -1,0 +1,50 @@
+.link-button {
+	display: flex;
+
+	color: $color-003;
+	@extend %font-800;
+	font-size: 4rem;
+	line-height: 3.6rem;
+
+    &__item-left {
+		position: relative;
+
+		padding: 2.5rem 1.7rem 2.5rem;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateX(50%);
+
+			width: 2rem;
+			height: .1rem;
+
+			background: $color-003;
+		}
+	}
+
+    &__item-right {
+		position: relative;
+
+		padding: 2.5rem 5.7rem 2.5rem 1.7rem;
+
+		background: $color-001;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 1rem;
+			transform: translateY(-50%);
+
+			width: 3rem;
+    		height: 3rem;
+
+			background: url(./../images/common/arrow-right.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+}
